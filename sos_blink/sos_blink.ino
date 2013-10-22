@@ -1,25 +1,21 @@
 /*
-  Blink
-  Turns on an LED on for one second, then off for one second, repeatedly.
- 
-  This example code is in the public domain.
+  SOS Blink
+  
+  Uses a LED to send a SOS message
  */
  
-// Pin 13 has an LED connected on most Arduino boards.
-// give it a name:
+// Arduino Uno - LED connected to pin 13
 int led = 13;
 
-// the setup routine runs once when you press reset:
 void setup() {                
-  // initialize the digital pin as an output.
+  // Flag the LED pin as an output
   pinMode(led, OUTPUT);     
 }
 
-// the loop routine runs over and over again forever:
 void loop() {
-  digitalWrite(led, HIGH);    // turn the LED on (HIGH is the voltage level)
+  digitalWrite(led, HIGH);    // On
   delay(250);               
-  digitalWrite(led, LOW);     // turn the LED off by making the voltage LOW
+  digitalWrite(led, LOW);     // Off
   delay(250);               
   
   digitalWrite(led, HIGH);
