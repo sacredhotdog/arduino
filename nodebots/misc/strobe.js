@@ -1,7 +1,6 @@
-var five = require("../../johnny-five/lib/johnny-five"),
-    board = new five.Board();
+var johnnyFive = require("./johnny-five/lib/johnny-five"),
+	board = new johnnyFive.Board();
 
 board.on("ready", function() {
-    (new five.Led(13)).strobe();
+	(new johnnyFive.Led(13)).strobe();
 });
-
